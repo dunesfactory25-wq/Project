@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="cont">
+            <h1 id="sidebar">SideBar </h1>
+            <button id="leave">Leaves</button>
+            <br>
+            <ul id="userList">Users</ul>
+            <!-- <button>Users</button> -->
+
+        </div>
+        
+        <div class="cont" id="">Main Display
+            <div id="main" ></div>
+            <div id="mainDisplay"></div>
+            <!-- <select name="status" id="">
+                <option value="all">ALL</option>
+                <option value="pending">Pending</option>
+                <option value="approved">Approved</option>
+                <option value="rejected">Rejected</option>
+            </select> -->
+            
+        </div>
+        <div class="cont">Add Leave
+            <form action="" id="addLeave">
+                 <!-- <label for="reason">Reason:</label>
+                 <input type="text" id="reason"  required placeholder="Enter a reason"><br>
+                 <label for="date">Date:</label>
+                 <input type="date" id="date"  >
+                 <input type="checkbox" id="date" >
+                 <label for="date">Today</label> -->
+
+                <h2>Reason:<input type="text" id="reason" required placeholder="Enter Reason"> </h2>
+                <h2>Date:<input type="date" id="date" placeholder="Enter date"><input type="checkbox"  id="Today" onclick="update()">
+                    <label for="Today">Today</label>
+                </h2>
+
+                 <br>
+
+                 <button>Add leave</button>
+
+
+            </form>
+
+
+
+        </div>
+    </div>
+    
+</body>
+<script src="../JAVAsCRIPT/leaveCard.js"></script>
+<script src="../JAVAsCRIPT/userList.js"></script>
+<script src="../JAVAsCRIPT/leaves.js"></script>
+
+</html>
